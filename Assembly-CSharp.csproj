@@ -64,9 +64,12 @@
     <Compile Include="Assets\LWRP\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\EnemyAi.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawn.cs" />
+    <Compile Include="Assets\Scripts\EnemyTurret.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\TileManager.cs" />
+    <Compile Include="Assets\Scripts\Turret.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Rob/Documents/Repos/TowerRunner/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

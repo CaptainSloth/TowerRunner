@@ -14,7 +14,7 @@ public class EnemyAi : MonoBehaviour
 
     void Start()
     {
-        target = PlayerManager.instance.player.transform; //Pulls player crap out to use yo
+        target = PlayerManager.instance.player.transform; //Pulls "Player" out of PlayerManager
     }
 
     void Update()
@@ -29,12 +29,13 @@ public class EnemyAi : MonoBehaviour
         if (distance <= lookRadius)
         {
             transform.position += transform.forward * e_MoveSpeed * Time.deltaTime;
+            Debug.Log("Found:" + target);
         }
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 }
